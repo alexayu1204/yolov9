@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+
+
+nc: 1
+names: ['Rock']
+
+roboflow:
+  workspace: the-void-avtobot-30
+  project: avtobot-3.0
+  version: 4
+  license: Private
+  url: https://universe.roboflow.com/the-void-avtobot-30/avtobot-3.0/dataset/4

@@ -1,0 +1,166 @@
+# PyTorch / Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.env
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+.ipynb_checkpoints
+
+runs/
+# YOLO specific
+# DO NOT ignore model checkpoints (we want to keep our trained models)
+*.pt 
+runs/
+# !weights/*.pt  # keep all checkpoints
+# !runs/train/*/weights/*.pt  # keep all weights generated during training
+
+# Keep specific checkpoints we want to share
+!best.pt
+!epoch31.pt
+!epoch33_best.pt
+!yolov9-e-converted.pt
+
+# DO NOT ignore runs directory result images
+# !runs/detect/*/
+# !runs/val/*/
+
+# DO NOT ignore zipped dataset
+!train_valid_dataset.zip
+
+# Large log files
+*.log
+wandb/
+logs/
+
+# Temporary files
+tmp/
+temp/
+.temp/
+*.tmp
+
+# System files
+Thumbs.db
+
+# Training cache (but keep the dataset structure)
+*.cache
+
+# YOLO results and runs directory - we want to keep the images
+!runs/
+!runs/**/
+!runs/**/*.jpg
+!runs/**/*.jpeg
+!runs/**/*.png
+
+# Python bytecode files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+
+# Distribution / packaging
+.env
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Virtual environments
+venv/
+ENV/
+env/
+
+# Editor configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# YOLO specific caches
+*.cache
+
+# Log files
+**/logs/
+logs/
+*.log
+temp/
+
+# Data not to ignore
+!train.zip
+!valid.zip
+
+# Large files to ignore
+*.weights
+*.mp4
+*.avi
+*.MOV
+*.mov
+
+# But we want to keep some specific model and result files
+!yolov9-e-converted.pt
+!yolov9-c.pt
+!image_small.png 
